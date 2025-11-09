@@ -1,0 +1,21 @@
+package Day4;
+
+public class MissingNumber {
+        public static void main(String[] args) {
+            int[] arr = {2,3,4,5};
+            int n = arr.length + 1;
+            int expectedSum = n * (n + 1) / 2;
+            int actualSum = 0;
+            for (int i = 0; i < arr.length; i++) {
+                actualSum += arr[i];
+            }
+            int missing = expectedSum - actualSum;
+            System.out.println("Original Sequence: ");
+            for (int i = 0; i < arr.length; i++) {
+                System.out.print(arr[i] + " ");
+            }
+            System.out.println("\nMissing Number: " + missing);
+        }
+    }
+
+
